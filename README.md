@@ -16,3 +16,4 @@ I'm using VS code and Linux CentOS7.
 * app.py: main entry of my flask API.
 * resources => course.py: different web method to get all courses or one specific course.
 * templates => chartJS.html: codes for charts. 
+* webcrawler_careernet.py: web scrapping codes.
