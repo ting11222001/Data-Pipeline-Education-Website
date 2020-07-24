@@ -86,18 +86,18 @@ driver.quit()
 # print(final_list)
 
 # check data using dataframe
-raw_data = {
-    'today': str(datetime.datetime.now().date()),
-    'title': [i['title'] for i in final_list],
-    'category': [i['category'] for i in final_list],
-    'start_date': [i['start_date'] for i in final_list],
-    'content': [i['content'] for i in final_list],
-    'price': [i['price'] for i in final_list],
-    'audience': [i['audience'] for i in final_list],
-    'location': [i['location'] for i in final_list],
-    'href': href_list, #for checking only
-}
-pd.set_option('display.max_rows', None)
+# raw_data = {
+#     'today': str(datetime.datetime.now().date()),
+#     'title': [i['title'] for i in final_list],
+#     'category': [i['category'] for i in final_list],
+#     'start_date': [i['start_date'] for i in final_list],
+#     'content': [i['content'] for i in final_list],
+#     'price': [i['price'] for i in final_list],
+#     'audience': [i['audience'] for i in final_list],
+#     'location': [i['location'] for i in final_list],
+#     'href': href_list, #for checking only
+# }
+# pd.set_option('display.max_rows', None)
 # df = pd.DataFrame(raw_data)
 
 # write data into pickle format
@@ -115,7 +115,7 @@ from sqlalchemy import create_engine
 def insert_sql(data):
     df = pd.DataFrame(data)
     engine = create_engine('mysql+pymysql://tiffany:admin123@192.168.56.123:3306/education')
-    df.to_sql('careernet3', engine, index = False)
+    df.to_sql('careernet', engine, index = False)
 # insert_sql(data)
 
 
