@@ -1,4 +1,4 @@
-# analyzing_an_education_website_with_flask_API_plus_chartJS
+# Complete Data Pipeline - from Web Scraping to Visualize the findings
 
 ## What I’m going to make and Why
 This is my hands-on project of creating a API from mySQL database and showing several analytical charts from all classes provided by an education website, careernet 青創學院.
